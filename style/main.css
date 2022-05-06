@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+html {
+    background-color: white;
+	background-image: url(https://www.endicottresearchcenter.net/csc102/midterm/images/tile_shamrock.jpg);
+    background-size: fixed;
+
+    }
+
+    body {
+        
+        font-size: 100%;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        border: 3px solid white; 
+        background-color: white;
+       
+    } 
+
+    h1 {
+        
+        font-size: 300%;
+        color: lightgreen;
+        text-align: center;
+        margin: 10px 0 0;
+        font-variant: small-caps;
+        text-shadow: 1px 1px 2px #000000, -1px -1px 2px #000000, 1px -1px 2px darkgreen;
+    }
+
+    h2 {
+        color: darkgreen;
+        font-size: 150%;
+        text-align: center;
+        font-variant: small-caps;
+    }
+
+    h3 {
+        color: black;
+        text-align: center;
+        font-size: 200%;
+        padding-top: .5em;
+    }
+
+   
+    h4 {
+        text-align: center;
+        font-variant: small-caps;
+        font-size: 150%;
+    }
+   
+
+
+  
+    p {
+        text-align: center;
+    }
+
+
+
+    header {
+        padding: .75em;	
+        background-image: linear-gradient(45deg, green 0%, white 50%, green 100%);
+    }
+
+    header img {
+        float: left;
+        max-width: 100px;
+        width: 100%;
+        margin-right: 1em;
+    }
+
+    section {
+        background-image: linear-gradient(45deg, orange 0%, white 50%, darkgreen 100%);
+    }
+    #nav_menu {
+        position: sticky;
+        top: 0;
+    }
+    .navigationmenu {
+        display: flex;
+        list-style: none;
+        position: relative;
+    }
+    
+    .navigationmenu li {
+        flex: 1
+    }
+    .navigationmenu li a {
+        display: block;
+        text-align: center;
+        padding: .5em 0;
+        text-decoration: none;
+        color: white;
+        background-color: green;
+        font-weight: bold;
+        transition: all 1s;
+    }
+    .navigationmenu li a:hover {
+        background-color: lightgreen;
+        color: black;
+        padding: .5em 0 .5em 1.5em;
+        text-decoration: underline;
+    }
+
+    .navigationmenu ul {
+        display: none;
+        width: 20%;
+        list-style: none;
+        position: absolute;
+        top: 100%;
+        background-color: steelblue;
+        box-shadow: 7px 7px 15px -1px gray;
+    }
+    
+    .navigationmenu ul li {
+        flex-direction: column;
+    }
+    
+    .navigationmenu ul li a {
+        padding-left: 1em;
+        display: block;
+        width: 100%;
+    }
+    
+    .navigationmenu li:hover > ul {
+        display: block;
+    }
+
+    footer {
+        padding: .75em;	
+        background-image: linear-gradient(45deg, green 0%, white 50%, green 100%);
+    }
+    #Sprink {
+    display: block;
+     margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 1em;
+    padding-top: 4px;
+    }
+    @media only screen and (max-width: 767px) {
+        
+        #nav_menu {
+            width:auto;
+            font-size: 75%;
+        }
+
+        h1 {
+            font-size: 200%;
+        }
+
+        h2 {
+            font-size: 150%;
+        }
+
+        h3 {
+            font-size: 150%;
+        }
+        h4 {
+            font-size: 100%;
+        }
+    }

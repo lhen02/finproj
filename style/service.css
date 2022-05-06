@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+html {
+    background-color: white;
+	background-image: url(https://www.endicottresearchcenter.net/csc102/midterm/images/tile_shamrock.jpg);
+    background-size: cover;
+
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100%;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        border: 3px solid white; 
+        background-color: white;
+       
+    } 
+
+    h1 {
+        font-size: 300%;
+        color: lightgreen;
+        text-align: center;
+        margin: 10px 0 0;
+        font-variant: small-caps;
+        text-shadow: 1px 1px 2px #000000, -1px -1px 2px #000000, 1px -1px 2px darkgreen;
+    }
+
+    h4 {
+        font-size: 300%;
+        color: lightgreen;
+        text-align: center;
+        padding: 2px;
+        font-variant: small-caps;
+        text-shadow: 1px 1px 2px #000000, -1px -1px 2px #000000, 1px -1px 2px darkgreen;
+    }
+    h2 {
+        color: darkgreen;
+        font-size: 150%;
+        text-align: center;
+        font-variant: small-caps;
+    }
+
+    h3 {
+        color: black;
+        font-size: 150%;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+   
+
+    p {
+        text-align: center;
+    }
+
+
+
+    header {
+        padding: .75em;	
+        background-image: linear-gradient(45deg, green 0%, white 50%, green 100%);
+    }
+
+    header img {
+        float: left;
+        max-width: 100px;
+        width: 100%;
+        margin-right: 1em
+    }
+
+    section {
+        background-image: linear-gradient(45deg, orange 0%, white 50%, darkgreen 100%);
+    }
+
+    .navigationmenu {
+        display: flex;
+        list-style: none;
+    }
+    
+    .navigationmenu li {
+        flex: 1
+    }
+    .navigationmenu li a {
+        display: block;
+        text-align: center;
+        padding: .5em 0;
+        text-decoration: none;
+        color: white;
+        background-color: green;
+        font-weight: bold;
+        transition: all 1s;
+    }
+    .navigationmenu li a:hover {
+        background-color: lightgreen;
+        color: black;
+        padding: .5em 0 .5em 1.5em;
+        text-decoration: underline;
+    }
+    footer {
+        padding: .75em;	
+        background-image: linear-gradient(45deg, green 0%, white 50%, green 100%);
+    }
+    
+    .slideshow-container {
+        max-width: 800px;
+        position: relative;
+        margin: auto;
+      }
+      .mySlides img {
+        border: 3px ridge gold;
+        border-radius: 30px;
+        max-width: 800px;
+      }
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+
+      @media only screen and (max-width: 767px) {
+        
+        #nav_menu {
+            width:auto;
+            font-size: 75%;
+        }
+
+        h1 {
+            font-size: 200%;
+        }
+
+        h2 {
+            font-size: 150%;
+        }
+
+        h3 {
+            font-size: 150%;
+        }
+        h4 {
+            font-size: 100%;
+        }
+
+        .slideshow-container {
+          max-width: 300px;
+          position: relative;
+          margin: auto;
+        }
+        .mySlides img {
+          border: 3px ridge gold;
+          border-radius: 30px;
+          max-width: 300px;
+        }
+ }
